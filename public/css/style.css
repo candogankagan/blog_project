@@ -1,0 +1,22 @@
+h2 {
+  color: red;
+}
+
+button {
+  font-size: 15px;
+  width: 100px;
+  height: 50px;
+  border: 1.5px black solid;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Slabo 27px', serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.blog-section {
+  margin: 50px;
+  border-style: solid;
+}

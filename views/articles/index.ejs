@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vlog</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Blog Articles</h2>
+      <button class="artic name">
+        <a href="/articles/new">New Article</a>
+      </button>
+
+      <% articless.forEach(article => { %>
+      <div class="blog-section">
+        <%= article.title %>
+        <div class="time">
+          <%= article.createdAt.toLocaleDateString("tr-TR",options)%>
+          <div class="description">
+            <%= article.description %>
+          </div>
+        </div>
+      </div>
+      <% })%>
+    </div>
+  </body>
+</html>
